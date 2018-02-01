@@ -6,6 +6,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 from discord.voice_client import VoiceClient
 import platform
+
 client = discord.Client()
 owid = ('297800633224921099')
 altid = ('362677230855389184')
