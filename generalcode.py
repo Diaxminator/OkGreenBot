@@ -474,5 +474,3 @@ async def on_member_join(Member : discord.User):
 @client.event
 async def on_member_remove(member : discord.User):
     await client.send_message(client.get_channel("403407018012049420"),":rose::rose: In the memories of **%s** :rose::rose: " % member.name)
-
-client.run("Mzk0MTAwMzkyMDcxMjY2MzA1.DUJoSw.ewxgvZjxbtbwDPk8jETQxHAJC00")
