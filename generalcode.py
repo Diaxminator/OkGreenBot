@@ -6,16 +6,11 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 from discord.voice_client import VoiceClient
 import platform
-#bot_prefix= "."
-#description = ("```Xorian Bot Made By Diaxminator```")
-#client = client = Bot(description="Psssst, Ok Green is talking!", command_prefix=".", pm_help = True)
 client = discord.Client()
 owid = ('297800633224921099')
 altid = ('362677230855389184')
 zookid = ('342333167514025986')
 client.login('email', 'password')
-#kickto = (ctx, userName, discord.User)
-
 
 @client.event
 async def on_ready():
@@ -26,15 +21,6 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
     print('Invite: https://discordapp.com/oauth2/authorize?client_id={}&scope=bot'.format(client.user.id))
     print('------')
-
-#@client.command(pass_context = True)
-#async def kick(ctx, userName: discord.User):
- #   await client.kick(userName)
-
-#@client.command(pass_context = True)
-#async def ban(ctx, userName: discord.User):
- #   await client.ban(userName)
-
 
 @client.event
 async def on_message(message):
@@ -372,8 +358,6 @@ async def on_message(message):
 
 
 ########################################################################################################################
-
-
     if message.content.upper().startswith("?BAM"):
         userID = message.author.id
         await client.send_message(message.channel, random.choice(["Yeah go on! Lets bam the whole server!!",
