@@ -1,4 +1,4 @@
-import discord
+mport discord
 import asyncio
 import random
 import datetime
@@ -372,23 +372,7 @@ async def on_message(message):
 
 
 ########################################################################################################################
-        #PRANK COMMANDS
 
-    #if message.content.upper().startswith("LOL"):
-        #userID = message.author.id
-        #await client.send_message(message.channel, "Do you know that that means laugh out loud?") #prank lol
-
-    #if message.content.upper().startswith("OK"):
-        #userID = message.author.id
-        #await client.send_message(message.channel, "If you were a grammar genius, you would know it actually is okay...") #prank ok
-
-    #if message.content.upper().startswith("X"):
-        #await client.send_message(message.channel, random.choice(["I don't think you used **`X`** in the correct matter :thinking:",
-                                                              #    "I think you should retake grammar lessons :thinking:",
-                                                                #  "Do you even england mate?",
-                                                               #   "Bam me harder",
-                                                               #   "Am I interrupting your conversation?",
-                                                               #   "Are **`YOU`** religious?"]))
 
     if message.content.upper().startswith("?BAM"):
         userID = message.author.id
@@ -506,20 +490,4 @@ async def on_member_join(Member : discord.User):
 async def on_member_remove(member : discord.User):
     await client.send_message(client.get_channel("403407018012049420"),":rose::rose: In the memories of **%s** :rose::rose: " % member.name)
 
-#async def my_background_task():
- #   await client.wait_until_ready()
-#    counter = 0
- #   channel = discord.Object(id='396714817810857984')
-#    while not client.is_closed:
-#        counter += 1
-#        await client.send_message(channel, counter)
-#        await asyncio.sleep(60) # task runs every 60 seconds
-        
-#client.loop.create_task(my_background_task())
 client.run("Mzk0MTAwMzkyMDcxMjY2MzA1.DUJoSw.ewxgvZjxbtbwDPk8jETQxHAJC00")
-
-    
-####################################################################################################################
-
-#datetime.datetime(*map(int, re_split(r'[^\d]', timestamp.replace('+00:00', ''))))
-
